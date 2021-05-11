@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- For external style sheets -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+  <link rel="stylesheet" type="text/css" href="css/hamburger-animation.css">
+  <link rel="stylesheet" type="text/css" href="css/dark-mode-button.css">
+  <link rel="stylesheet" type="text/css" href="css/dark-styles.css">
+  <!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--Makes menus on mobile devices responsive to touch (include :hover and :active)-->
+  <script>document.addEventListener("touchstart", function(){}, true);</script>
+  <!-- For custom fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"   rel="stylesheet"> 
+  <!-- Font awesome stuff -->
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b96c1e7f03.js"></script>
+  <title></title>
+  <style>
+
+    *, *:before, *:after {
+    box-sizing: border-box;
+    }
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+  
+  html {
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  header, article, main, section, footer {
+    height: auto;
+  }
+
+  body {
+  width: 1440px;
+  margin: 0 auto;
+  max-width: 100%;
+  min-height: 100%;
+  font-family: 'Rubik', sans-serif; /* 400 500 700 */
+  overflow-x: hidden;
+  padding-inline-start: 0%;
+  font-size: 16px;
+  line-height: 1.5;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+</style>
+</head>
+
+<body class="light-mode">
+  <header>
+    <div class="page-container">
+        <div class="purple-background"></div>
+      <div class="phone">
+        <div class="phone-top-round-part"></div>
+
+        <!--HEADER START-->
+        <div class="phone-header">
+
+          <div class="phone-header-left">
+            <i class="fas fa-chevron-left"></i>
+            <img src="images/avatar.jpg" width="30" class="avatar">
+
+            <div class="header-info-section">
+              <div class="name">
+                Samuel Green
+              </div>
+              <div class="availability">
+                Available to walk
+              </div>
+            </div>
+          </div>
+
+          <div class="phone-header-right">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <!--HEADER END-->
+
+        <!--MESSAGES SECTION START-->
+        <div class="messages-section">
+          <div class="chat-left">
+            That sounds great.  I'd be happy with that.
+          </div>
+          <div class="chat-left message-long">
+            Could you send over some pictures of your dog please?
+          </div>
+          <div class="dog-pics">
+            <img src="images/dog-image-1.jpg" class="dog-pic1 dog-photo" width="40">
+            <img src="images/dog-image-2.jpg" class="dog-pic2 dog-photo" width="40">
+            <img src="images/dog-image-3.jpg" class="dog-pic3 dog-photo" width="40">
+          </div>
+          <div class="chat-right">
+            Here are a few pictures.  She's a happy girl!
+          </div>
+          <div class="chat-right message2-right last-right-message">
+            Can you make it?
+          </div>
+          <div class="chat-left message-long">
+            She looks so happy! The time we discussed works. How long shall I take her out for?
+          </div>
+        </div>
+
+        <div class="radio-buttons">
+          <input type="radio" id="walktime" name="time" value="30min">
+          <button class="checkmark"></button>
+          <label for="30min">          
+            30 minute walk
+          </label>
+          <div class="amount">
+            $29
+          </div>
+        </div>
+        <div class="radio-buttons">
+          <input type="radio" id="walktime" name="time" value="60min">
+          <button class="checkmark"></button>
+          <label for="60min">
+            60 minute walk
+          </label>
+          <div class="amount">
+            $49
+          </div>
+        </div>
+        <div class="input-row">
+          <input type="text" id="name" name="name" placeholder="Type a message...">
+          <i class="fas fa-chevron-circle-right"></i>
+        </div>
+        <!--MESSAGES SECTION END-->
+      </div>
+
+      <div class="page-content-right">
+        <div class="header">
+          Simple booking
+        </div>
+        <div class="paragraph">
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+  </header> 
+  
+ <!-- For JS Scripts -->
+ <script type="text/javascript" src="js/hamburger.js"></script>
+ <script type="text/javascript" src="js/checkmark-toggle.js"></script>
+</body>
+</html>
